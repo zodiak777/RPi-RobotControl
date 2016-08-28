@@ -3,7 +3,7 @@
 In diesem Projekt wird nach und nach eine Kontrollsoftware für den Raspberry Pi in c++ erstellt um damit ein Roboter zu steuern.
 
 
-### Hardware.
+### Verwendete Bauteile
 
 Kommen wir erst einmal zu diverse Bauteile die ich für dieses Projekt (bis jetzt) verwende.
  - 1x Zumo Chassis von Pololu (Das ist zwar für einen Arduino ausgelegt, funktioniert aber auch Wunderbar mit einem Raspberry Pi.)
