@@ -29,7 +29,9 @@ Also denkbar einfach.
 
 Benötigt wird darüber hinaus noch die WiringPi API die wie folgt installiert werden kann.
 > git clone git://git.drogon.net/wiringPi
+> 
 > cd WiringPi
+> 
 > ./build
 
 WiringPi nutzt jedoch eine andere Belegung der GPIO Pins vom Raspberry Pi
