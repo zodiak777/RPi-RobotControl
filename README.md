@@ -1,9 +1,9 @@
-# RPi-RobotControl
+### RPi-RobotControl
 
 In diesem Projekt wird nach und nach eine Kontrollsoftware für den Raspberry Pi in c++ erstellt um damit ein Roboter zu steuern.
 
 
-# Hardware.
+### Hardware.
 
 Kommen wir erst einmal zu diverse Bauteile die ich für dieses Projekt (bis jetzt) verwende.
  - 1x Zumo Chassis von Pololu (Das ist zwar für einen Arduino ausgelegt, funktioniert aber auch Wunderbar mit einem Raspberry Pi.)
@@ -12,7 +12,7 @@ Kommen wir erst einmal zu diverse Bauteile die ich für dieses Projekt (bis jetz
  - 1x Raspberry Pi Modell B+
 
 
-# Vorbereitung / Installation
+### Vorbereitung / Installation
 
 Als OS verwende ich das empfohlene Raspbian, eine Debian Distribution die für den Raspberry Pi angepasst wurde.
 Das bietet den Vorteil das dinge wie z.B. g++ und ein Git Client bereits installiert sind. 
@@ -44,7 +44,7 @@ Sobald dann alles erstellt wurde, muss die Datei "Control" ausführbar gemacht w
 Und am ende Ausgeführt werden.
 > sudo ./control
 
-# Handhabung
+### Handhabung
 
 Wenn alles funktioniert hat, und die Datei ausgeführt wurde sollte ein Menü wie im folgenden Bild erscheinen.
 [http://i.imgur.com/ymppeN6.png](http://i.imgur.com/ymppeN6.png)
@@ -53,3 +53,16 @@ Hier können nun die Schritte, die der Roboter befolgen soll, eingegeben werden.
 als Beispiel: 1234
 Dadurch bewegt sich der Roboter dann einmal vor, dreht sich nach links, dreht sich nach rechts und bewegt sich wieder zurück.
 
+
+
+
+
+
+
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+Quote break.
+
+> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
