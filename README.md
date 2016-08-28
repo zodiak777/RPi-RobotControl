@@ -12,7 +12,7 @@ Kommen wir erst einmal zu diverse Bauteile die ich für dieses Projekt (bis jetz
  - 1x Raspberry Pi Modell B+
 
 
-### Vorbereitung / Installation
+### Vorbereitung
 
 Als OS verwende ich das empfohlene Raspbian, eine Debian Distribution die für den Raspberry Pi angepasst wurde.
 Das bietet den Vorteil das dinge wie z.B. g++ und ein Git Client bereits installiert sind. 
@@ -36,6 +36,9 @@ Benötigt wird darüber hinaus noch die WiringPi API die wie folgt installiert w
 
 WiringPi nutzt jedoch eine andere Belegung der GPIO Pins vom Raspberry Pi
 Genaue Belegung ist hier: [http://i.imgur.com/x8nJzJh.png](http://i.imgur.com/x8nJzJh.png)
+
+
+###Installation
 
 Wenn alles nötige installiert ist, kann die build.sh aus diesem Projekt verwendet werden. 
 > ./build.sh
