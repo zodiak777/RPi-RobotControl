@@ -18,8 +18,11 @@ Als OS verwende ich das empfohlene Raspbian, eine Debian Distribution die für d
 Das bietet den Vorteil das dinge wie z.B. g++ und ein Git Client bereits installiert sind. 
 Falls gpp und git widererwartend nicht installiert sind kann man das wie folgt installieren.
 > sudo apt-get update
+> 
 > sudo apt-get upgrade
+> 
 > sudo apt-get install git-core
+> 
 > sudo apt-get install g++
 
 Also denkbar einfach. 
@@ -52,18 +55,3 @@ Wenn alles funktioniert hat, und die Datei ausgeführt wurde sollte ein Menü wi
 Hier können nun die Schritte, die der Roboter befolgen soll, eingegeben werden. Es können hier auch mehrere Schritte angegeben werden, die nach und nach ausgeführt werden.
 als Beispiel: 1234
 Dadurch bewegt sich der Roboter dann einmal vor, dreht sich nach links, dreht sich nach rechts und bewegt sich wieder zurück.
-
-
-
-
-
-
-
-
-> Dies ist ein Zitat mit zwei Absätzen. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere
-> lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet
-> vitae, risus.
-> 
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-> Suspendisse id sem consectetuer libero luctus adipiscing.
