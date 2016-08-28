@@ -38,7 +38,7 @@ WiringPi nutzt jedoch eine andere Belegung der GPIO Pins vom Raspberry Pi
 Genaue Belegung ist hier: [http://i.imgur.com/x8nJzJh.png](http://i.imgur.com/x8nJzJh.png)
 
 Wenn alles nötige installiert ist, kann die build.sh aus diesem Projekt verwendet werden. 
-> /build.sh
+> ./build.sh
 
 Gegebenfalls muss diese Datei noch ausführbar gemacht werden:
 > sudo chmod +x build.sh
