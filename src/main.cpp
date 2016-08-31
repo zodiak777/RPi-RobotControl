@@ -10,7 +10,7 @@
 using namespace std;
 
 /*
-Ich hab ums verrecken keinen zufriedenstellenden Weg gefunden die Länge eines
+Ich hab ums verrecken keinen zufriedenstellenden Weg gefunden die LÃ¤nge eines
 int Arrays zu ermitteln, also habe ich mir kurzehand eine eigene Methode
 geschrieben.
 */
@@ -23,27 +23,27 @@ int size(int Array[]){
 }
 
 int main(){
-	// Setup für die GPIO pims, damit sie angesprochen werden können
+	// Setup fÃ¼r die GPIO pims, damit sie angesprochen werden kÃ¶nnen
 	if(wiringPiSetup() == -1)
 		return 1;
 
-	system("clear"); // Damit die einträge, die vor dem Programmstart in der console (von z.b. putty) waren, verschwinden
+	system("clear"); // Damit die eintrÃ¤ge, die vor dem Programmstart in der console (von z.b. putty) waren, verschwinden
 	initPorts(); // GPIO Pins werden hier auf output gesetzt.
 	
-	// Eine simple while Schleife die das Programm am laufen hällt bis ich es beende.
+	// Eine simple while Schleife die das Programm am laufen hÃ¤llt bis ich es beende.
 	bool running = true;
 	while(running)
 	{
 		menu();
 		
 		/*
-		Auswahl welche option(en) durchgeführt werden sollen.
-		Mehrere optionen sind möglich (1234 für vor, links, rechts, zurück)
+		Auswahl welche option(en) durchgefÃ¼hrt werden sollen.
+		Mehrere optionen sind mÃ¶glich (1234 fÃ¼r vor, links, rechts, zurÃ¼ck)
 		*/
 		printf("Enter key[s]: ");
 		char* sInput;
 		cin >> sInput;
-		printf("\n"); // Es ist einfach hässlich dierekt nach dem "Enter key[s]: " die erste ausgabe zu haben!
+		printf("\n"); // Es ist einfach hÃ¤sslich dierekt nach dem "Enter key[s]: " die erste ausgabe zu haben!
 		
 		// Wandelt die char* Variable vom input in int* Zahlen um.
 		int iInput[strlen(sInput)];
@@ -51,20 +51,20 @@ int main(){
 			iInput[i] = sInput[i] - '0';
 		}
 		
-		// Geht jede, vom input angegebene, zahl durch um das entsprechende auszuführen.
+		// Geht jede, vom input angegebene, zahl durch um das entsprechende auszufÃ¼hren.
 		for(int i = 0; i < size(iInput); i++){
 			switch(iInput[i]){
 				case 1:
 					roboMove(900, FORWARD); //bewegt den robo 900 mm vor
 					break;
 				case 2:
-					roboTurn(90, LEFT); //bewegt den robo 90° nach links
+					roboTurn(90, LEFT); //bewegt den robo 90Â° nach links
 					break;
 				case 3:
-					roboTurn(90, RIGHT); //bewegt den robo 90° nach rechts
+					roboTurn(90, RIGHT); //bewegt den robo 90Â° nach rechts
 					break;
 				case 4:
-					roboMove(900, BACKWARD); //bewegt den robo 900 mm zurück
+					roboMove(900, BACKWARD); //bewegt den robo 900 mm zurÃ¼ck
 					break;
 				case 5:
 					system("clear");
@@ -78,8 +78,8 @@ int main(){
 			}
 		}
 		
-		// Säubert die Konsole, ist sonst echt unschön
-		//system("clear");
-		//printf("\033[2J");
+		// SÃ¤ubert die Konsole, ist sonst echt unschÃ¶n
+		system("clear");
+		printf("\033[2J");
 	}
 }
