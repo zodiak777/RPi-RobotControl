@@ -23,7 +23,7 @@ void initPorts()
 			printf("\033[0;32m[INFO]:\033[0m GPIO port %d set to LOW\n", GPIO_Port[i]);
 		}else if (digitalRead(GPIO_Port[i]) == 0){ // Wenn nicht, nichts weiter machen
 			printf("\033[0;32m[INFO]:\033[0m GPIO port %d already LOW\n", GPIO_Port[i]);
-		}else{ // Einfach nur falls es ein Gehler gibt und der Status eines Pins nicht ermittelt werden kann
+		}else{ // Einfach nur falls es ein Fehler gibt und der Status eines Pins nicht ermittelt werden kann
 			printf("\033[0;31m[ERROR]:\033[0m can't define state of GPIO port %d", GPIO_Port[i]);
 		}
 		delay(200);
