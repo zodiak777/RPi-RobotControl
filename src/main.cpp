@@ -10,7 +10,7 @@
 using namespace std;
 
 /*
-Ich hab ums verrecken keinen zufriedenstellenden Weg gefunden die Länge eines
+Ich hab einfach keinen zufriedenstellenden Weg gefunden die Länge eines
 int Arrays zu ermitteln, also habe ich mir kurzehand eine eigene Methode
 geschrieben.
 */
